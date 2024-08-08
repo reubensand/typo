@@ -15,6 +15,14 @@
     <p class="single-summary">{{ . }}</p>
     {{ end }}
 
+    {{/* Author */}}
+    
+    <div class="single-author">
+      {{ with .Param "author" }}
+        <p>By: {{ . }}</p>
+      {{ end }}
+    </div>
+
     {{/* Reading Time */}}
 
     <p class="single-readtime">
